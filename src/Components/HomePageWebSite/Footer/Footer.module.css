@@ -1,0 +1,42 @@
+.footer {
+    background: linear-gradient(to left, rgb(11, 51, 78), rgb(34, 205, 244));
+    padding: 4rem 0;
+  }
+  
+  .column {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .header {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .socialIcons a {
+    font-size: 30px;
+    margin-right: 1rem;
+    color: rgb(241, 241, 242); 
+    transition: color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .socialIcons a:hover {
+    color: #111111; 
+    transform: scale(1.1);
+  }
+  
+  .animateFromRight {
+    animation: slideFromRight 1s ease-out forwards;
+  }
+  
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  

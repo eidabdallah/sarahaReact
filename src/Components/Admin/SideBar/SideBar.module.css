@@ -1,0 +1,13 @@
+.sidebar {
+    height: 100vh;
+    background: rgb(0, 183, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.menuItem {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+}

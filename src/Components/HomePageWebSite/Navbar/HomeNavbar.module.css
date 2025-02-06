@@ -1,0 +1,15 @@
+.navbar {
+    background: linear-gradient(to right, rgb(11, 51, 78), rgb(34, 205, 244));
+}
+
+.navLink {
+    color: white !important;
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    margin-right: 1rem !important;
+    transition: color 0.3s ease !important;
+}
+
+.navLink:hover {
+    color: rgb(19, 25, 27) !important;
+}

@@ -1,0 +1,35 @@
+.userHome {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .statCard {
+    text-align: center;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .statCard h5 {
+    color: #555;
+  }
+  
+  .messageCard {
+    border-left: 5px solid #007bff;
+    background: white;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  .logoImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .userUrl span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  

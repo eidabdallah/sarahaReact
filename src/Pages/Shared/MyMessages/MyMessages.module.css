@@ -1,0 +1,38 @@
+.myMessages {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .messageCard {
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .messageCard:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .messageCard .card-body {
+    padding: 15px;
+  }
+  
+  .messageCard .card-text {
+    font-size: 1rem;
+    color: #495057;
+    font-weight: 500;
+  }
+  
+  .messageCard hr {
+    border-top: 1px solid #dee2e6;
+    margin: 10px 0;
+  }
+  
+  .messageCard .text-secondary {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
