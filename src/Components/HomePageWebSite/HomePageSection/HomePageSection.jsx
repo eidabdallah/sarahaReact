@@ -8,7 +8,7 @@ export default function HomePageSection() {
     <section className={`${styles.homeSection} container ${styles.animateFromLeft}`}>
       <div className="row align-items-center">
         <div className="col-lg-4 col-md-6 text-center">
-          <img src={logo} alt="Logo" className={styles.logoImage} />
+          <img src={logo} alt="Logo" className ={` mb-3 ${styles.logoImage}`} />
         </div>
 
         <div className="col-lg-8 col-md-6">
