@@ -1,23 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Button, Offcanvas } from "react-bootstrap";
 import SideBar from "../Components/Admin/SideBar/SideBar.jsx";
 import SharedNavbar from "../Components/shared/Navbar/Navbar.jsx";
 
 export default function AdminLayout() {
+  const [showSidebar, setShowSidebar] = useState(false);
+
   return (
     <>
       <SharedNavbar />
       <Container fluid className="p-0">
-        <Row>
-          <Col md={2}>
+        <Row className="justify-content-center">
+          <Col xs={12} className="d-lg-none text-center my-2">
+            <Button variant="primary" className="px-4 py-2 fw-bold" onClick={() => setShowSidebar(true)}>
+              القائمة الجانبية
+            </Button>
+          </Col>
+
+          <Col lg={2} className="d-none d-lg-block">
             <SideBar />
           </Col>
-          <Col md={10}>
+
+          <Col lg={10} sm={12} xs={12}>
             <Outlet />
           </Col>
         </Row>
       </Container>
+
+      <Offcanvas 
+  show={showSidebar} 
+  onHide={() => setShowSidebar(false)} 
+  placement="start"
+  style={{ width: "270px", minWidth: "270px" }} 
+>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>القائمة الجانبية</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body className="p-0">
+          <SideBar />
+        </Offcanvas.Body>
+      </Offcanvas>
     </>
   );
 }

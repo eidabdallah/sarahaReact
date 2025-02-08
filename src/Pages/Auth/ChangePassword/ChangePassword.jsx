@@ -42,7 +42,7 @@ export default function ChangePassword() {
   };
 
   return (
-    <div className="container py-5  w-50">
+    <div className="container py-5 w-100 w-md-75 w-lg-50" style={{ maxWidth: "500px", minWidth: "280px" }}>
       <h2 className="text-center mb-4">تغير كلمة المرور</h2>
 
       {error && <div className="alert alert-danger">{error}</div>}

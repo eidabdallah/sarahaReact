@@ -49,11 +49,14 @@ export default function Home() {
         <img src={logo} alt="Logo" className={styles.logoImage} />
       </div>
 
-      <p className={`${styles.userUrl} mt-5 mb-5`}>
-        رابطك الشخصي للتواصل معك بأبسط طريقة:
-        <span className="fw-bold me-3 text-danger border border-2 border-danger p-2">
-          {isLoading ? "جاري التحميل ..." : user?.urlUser || "غير متوفر"}        </span>
+      <p className={`${styles.userUrl} mt-5 mb-5 text-center text-lg-end`}>
+        رابط الشخصي للتواصل معك:
+        <br className="d-lg-none" />
+        <span className="fw-bold me-3 text-danger border border-2 border-danger p-1 mt-2 d-inline-block">
+          {isLoading ? "جاري التحميل ..." : user?.urlUser || "غير متوفر"}
+        </span>
       </p>
+
 
       {error && <div className="alert alert-danger">خطأ: {error}</div>}
 

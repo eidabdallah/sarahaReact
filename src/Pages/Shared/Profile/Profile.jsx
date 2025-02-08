@@ -74,15 +74,12 @@ export default function Profile() {
   };
 
   return (
-    <div className="container py-5  w-50">
+    <div className="container py-5 w-100 w-md-75 w-lg-50" style={{ maxWidth: "500px", minWidth: "280px" }}>
       <h2 className="text-center mb-4">👤 الملف الشخصي</h2>
 
       {error && <div className="alert alert-danger">{error}</div>}
 
-      <Form
-        onSubmit={handleSubmit(handleUpdate)}
-        className="shadow-lg p-4 rounded-3 bg-light"
-      >
+      <Form onSubmit={handleSubmit(handleUpdate)} className="shadow-lg p-4 rounded-3 bg-light" >
         <CustomInput
           label="اسم المستخدم"
           type="text"
