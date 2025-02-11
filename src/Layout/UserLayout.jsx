@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { Col, Container, Row, Button, Offcanvas } from "react-bootstrap";
 import SideBar from "../Components/User/SideBar/SideBar.jsx";
-import SharedNavbar from "../Components/shared/Navbar/Navbar.jsx";
+import SharedNavbar from './../Components/Shared/Navbar/Navbar';
+
 
 export default function AdminLayout() {
   const [showSidebar, setShowSidebar] = useState(false);
