@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./sendCode.module.css";
+import styles from "./SendCode.module.css";
 import logo from "../../../assets/logo/logo.png";
 import SendCodeForm from './SendCodeForm';
 
