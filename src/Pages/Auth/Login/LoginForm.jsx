@@ -53,7 +53,7 @@ export default function LoginForm() {
 
   return (
     <form onSubmit={handleSubmit(LoginUser)}>
-      {error && <div className="text-danger mb-2">{error}</div>}
+      {error && <div className="text-danger mb-2">{error.errors}</div>}
       <CustomInput label="البريد الإلكتروني" type="email" name="email" register={register} validation={{ required: "البريد الإلكتروني مطلوب", pattern: { value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, message: "البريد الإلكتروني غير صالح" } }} errors={errors} />
       <CustomInput label="كلمة المرور" type="password" name="password" register={register} validation={{ required: "كلمة المرور مطلوبة", minLength: { value: 8, message: "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل" } }} errors={errors} />
 

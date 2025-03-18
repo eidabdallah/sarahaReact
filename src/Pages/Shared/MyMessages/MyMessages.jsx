@@ -17,7 +17,7 @@ export default function MyMessages() {
       });
       setMessages(response.data.messages.messages || []);
     } catch (error) {
-      setError(error.response?.data?.message || "حدث خطأ أثناء جلب الرسائل.");
+      setError(error.response?.data?.message);
     } finally {
       setLoading(false);
     }
@@ -28,7 +28,7 @@ export default function MyMessages() {
   }, []);
 
   if (loading) {
-    return <LoadingPage />
+    return <LoadingPage />;
   }
   return (
     <Container className={`py-4 ${styles.myMessages}`}>
