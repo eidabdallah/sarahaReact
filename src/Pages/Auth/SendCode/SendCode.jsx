@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./SendCode.module.css";
 import logo from "../../../assets/logo/logo.png";
-import SendCodeForm from './SendCodeForm';
+import SendCodeForm from './SendCodeForm.jsx';
 
 export default function SendCode() {
   return (
